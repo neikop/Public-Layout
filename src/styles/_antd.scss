@@ -1,0 +1,25 @@
+.ant-notification,
+.ant-message {
+  z-index: 1301;
+}
+
+.ant-dropdown {
+  z-index: 890;
+}
+
+.ant-message {
+  top: 72px;
+  .ant-message-custom-content {
+    font-size: 1rem;
+  }
+}
+
+.ant-popover-message-title {
+  font-size: 1rem;
+}
+
+.ant-spin-nested-loading > div > .ant-spin .ant-spin-dot {
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  margin: 0px;
+}

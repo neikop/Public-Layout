@@ -1,0 +1,28 @@
+@import 'styles/antd';
+@import 'styles/customize';
+@import 'styles/figma';
+@import 'styles/layout';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+code,
+pre,
+input[type='code'],
+textarea[type='code'] {
+  font-family: 'Inconsolata', monospace !important;
+}
+
+* {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}

@@ -1,0 +1,28 @@
+.App {
+  min-height: 100vh;
+}
+
+.App-Header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 900;
+  padding: 0px 24px;
+}
+.App-Footer {
+  padding: 12px 24px;
+}
+.App-Body {
+  padding: 24px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .App-Header,
+  .App-Footer {
+    padding: 0px 12px;
+  }
+}
