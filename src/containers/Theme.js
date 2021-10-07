@@ -1,69 +1,44 @@
 import { createTheme, ThemeProvider } from '@mui/material';
 
 export const appTheme = createTheme({
-  props: {
+  components: {
     MuiTextField: {
-      InputLabelProps: { shrink: true },
-      inputProps: { autoSave: 'false' },
+      defaultProps: {
+        InputLabelProps: { shrink: true },
+        inputProps: { autoSave: 'false' },
+      },
     },
     MuiTypography: {
-      component: 'div',
+      defaultProps: {
+        component: 'div',
+      },
     },
-    // MuiInputBase: {
-    //   style: {
-    //     backgroundColor: '#fff',
-    //   },
-    // },
     MuiButton: {
-      style: {
+      styleOverrides: {
         textTransform: 'none',
       },
     },
     MuiContainer: {
-      maxWidth: 'xl',
+      styleOverrides: {
+        maxWidthLg: {
+          maxWidth: '1440px !important',
+        },
+        maxWidthMd: {
+          maxWidth: '1080px !important',
+        },
+      },
     },
     MuiTooltip: {
-      arrow: true,
+      defaultProps: {
+        arrow: true,
+      },
     },
     MuiLink: {
-      target: '_blank',
-    },
-  },
-  typography: {
-    fontFamily: 'Roboto',
-    // button: { fontWeight: 600, textTransform: 'none' },
-    // h1: { fontWeight: 700 },
-    // h2: { fontWeight: 700 },
-    // h3: { fontWeight: 700 },
-    // h4: { fontWeight: 700 },
-    // h5: { fontWeight: 700 },
-    // h6: { fontWeight: 700 },
-    // subtitle1: { fontWeight: 600, lineHeight: 1.5 },
-    // subtitle2: { fontWeight: 600, lineHeight: 1.43 },
-  },
-  overrides: {
-    MuiTooltip: {
-      tooltip: {
-        fontSize: '0.725rem',
-      },
-    },
-    MuiIconButton: {
-      sizeSmall: {
-        padding: 8,
+      defaultProps: {
+        target: '_blank',
       },
     },
   },
-  // palette: {
-  //   primary: {
-  //     main: color.primary,
-  //   },
-  //   secondary: {
-  //     main: color.secondary,
-  //   },
-  //   common: {
-  //     black: color.black,
-  //   },
-  // },
 });
 
 const Theme = ({ children }) => {
