@@ -3,6 +3,7 @@
     "react-app"
   ],
   "rules": {
-    "jsx-a11y/alt-text": "off"
+    "jsx-a11y/alt-text": "off",
+    "react/jsx-no-target-blank": "off"
   }
 }

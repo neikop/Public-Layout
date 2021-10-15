@@ -15,11 +15,16 @@ export const appTheme = createTheme({
     },
     MuiButton: {
       styleOverrides: {
-        textTransform: 'none',
+        root: {
+          textTransform: 'none',
+        },
       },
     },
     MuiContainer: {
       styleOverrides: {
+        maxWidthXl: {
+          maxWidth: '1800px !important',
+        },
         maxWidthLg: {
           maxWidth: '1440px !important',
         },

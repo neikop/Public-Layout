@@ -1,7 +1,7 @@
 @import 'styles/antd';
 @import 'styles/customize';
-@import 'styles/figma';
 @import 'styles/layout';
+@import 'styles/figma';
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@
 @tailwind screens;
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Libre Franklin', sans-serif !important;
 }
 
 code,

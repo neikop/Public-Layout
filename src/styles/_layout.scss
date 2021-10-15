@@ -5,7 +5,7 @@
 .App-Header {
   display: flex;
   align-items: center;
-  height: 160px;
+  height: 120px;
   position: sticky;
   top: 0px;
   left: 0px;
@@ -14,13 +14,13 @@
   padding: 0px 24px;
 }
 .App-Footer {
-  padding: 12px 24px;
+  padding: 0px 24px;
 }
 .App-Body {
   padding: 0px 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .App-Header,
   .App-Footer {
     padding: 0px 12px;
